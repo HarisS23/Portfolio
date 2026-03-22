@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haris Sejmenović Portfolio</title>
+  <meta name="description" content="[YOUR TAGLINE]" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo"><span>Haris Sejmenović</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects">Work</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-lines"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Available for work &nbsp;&middot;&nbsp; Maglaj</p>
+      <h1 class="hero-name">
+        <br><span class="line-2">Haris Sejmenović</span>
+      </h1>
+      <p class="hero-title">Software engineering student</p>
+      <p class="hero-desc">
+        Third-year Software Engineering student with a hands-on approach to building things that work. From full-stack web apps to real-time systems and Unity game mechanics. I ship across the stack and pick up whatever the project demands.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          View My Work
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#contact" class="btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-frame">
+        <img src="assets/LinkedinProfFinal.png" alt="[YOUR NAME]" />
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <svg width="16" height="20" viewBox="0 0 16 20" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="1" y="1" width="14" height="18" rx="7"/><circle cx="8" cy="6" r="1.5" fill="currentColor" stroke="none"/></svg>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-left reveal">
+      <p class="section-label">About Me</p>
+      <h2 class="section-heading">Building Software,<br>One Project at a Time</h2>
+      <div class="about-bio">
+        <p>I'm a third-year Software Engineering student at the Faculty of Information Technologies, University "Džemal Bijedić" in Mostar. I got into software because I genuinely enjoy the process of building things, turning an idea into something that actually runs and does something useful.</p>
+        <p>My work spans <em>full-stack web development</em>, <em>real-time systems</em>, and <em>game development</em>. I'm comfortable across the stack, from designing a database and wiring up an API, to building out a frontend or handling game mechanics in Unity. I don't stick to one lane.</p>
+        <p>Projects like Employee Atlas, Flair, and Deadshot came out of real curiosity, each one pushed me into territory I hadn't fully mapped yet. That's the part I enjoy most.</p>
+      </div>
+    </div>
+    <div class="skills-grid">
+        <div class="skill-tag">C# / C++</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">ASP.NET Core</div>
+        <div class="skill-tag">Angular</div>
+        <div class="skill-tag">Unity</div>
+        <div class="skill-tag">SQL Server</div>
+        <div class="skill-tag">SignalR</div>
+        <div class="skill-tag">Git &amp; GitHub</div>
+      </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label reveal">Selected Work</p>
+    <h2 class="section-heading reveal reveal-delay-1">Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- CARD: Employee Atlas -->
+      <a href="pages/employee-atlas.html" class="project-card reveal">
+        <div class="project-card-img">
+          <img src="assets/AtlasLogo.png" alt="Employee Atlas" />
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-type">Web Application</p>
+          <h3 class="project-title">Employee Atlas</h3>
+          <p class="project-desc">A full-stack web application for managing employee data, handling profiles, roles, and organizational structure in one place.</p>
+          <div class="project-arrow">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- CARD: Flair -->
+      <a href="pages/flair.html" class="project-card reveal reveal-delay-1">
+        <div class="project-card-img">
+          <img src="assets/flairpfp.png" alt="Flair" />
+          
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-type">Web Application</p>
+          <h3 class="project-title">Flair</h3>
+          <p class="project-desc">A web application built around content. Focused on clean UX and practical functionality.</p>
+          <div class="project-arrow">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        </div>
+      </a>
+
+      <!-- CARD: Deadshot -->
+      <a href="pages/deadshot.html" class="project-card reveal reveal-delay-2">
+        <div class="project-card-img">
+          <img src="assets/DeadshotLogo.png" alt="Deadshot" />
+          
+        </div>
+        <div class="project-card-overlay">
+          <p class="project-type">Video Game</p>
+          <h3 class="project-title">Deadshot</h3>
+          <p class="project-desc">A Unity-built shooter where tight mechanics and fast-paced gameplay take center stage. Built from the ground up, physics, enemy AI, and all.</p>
+          <div class="project-arrow">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="reveal">
+      <p class="section-label">Get In Touch</p>
+      <h2 class="section-heading">Let's Work<br>Together</h2>
+      <p class="contact-intro">
+        Open to freelance work, collaborations, and internship opportunities. Whether you have a web app idea, a game concept, or just want to talk software. Feel free to reach out.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:haris.sejmenovic12@gmail.com" class="contact-link-item">
+          <span class="contact-link-label">Email</span>
+          <span class="contact-link-value">haris.sejmenovic12@gmail.com</span>
+        </a>
+        <a href="https://linkedin.com/in/haris-sejmenović-aa0427330" target="_blank" rel="noopener" class="contact-link-item">
+          <span class="contact-link-label">LinkedIn</span>
+          <span class="contact-link-value">Haris Sejmenović</span>
+        </a>
+        <a href="https://github.com/HarisS23" target="_blank" rel="noopener" class="contact-link-item">
+          <span class="contact-link-label">GitHub</span>
+          <span class="contact-link-value">HarisS23</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/mbdzwejz" method="POST">
+        <div class="form-group">
+          <label class="form-label" for="name">Your Name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Subject</label>
+          <input class="form-input" type="text" id="message" name="message" placeholder="Project Inquiry" />        </div>
+        <div class="form-group">
+          <label class="form-label" for="subject">Message</label>
+          <textarea class="form-textarea" id="subject" name="subject" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo"><span>Haris Sejmenović</span></span>
+    <span class="footer-copy">&copy; <span id="year"></span> &mdash; All rights reserved</span>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
