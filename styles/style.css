@@ -1,11 +1,6 @@
-/* ============================================================
-   PORTFOLIO — GLOBAL STYLES
-   Aesthetic: Cinematic Dark / Editorial
-   ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap');
 
-/* ── CSS Variables ── */
 :root {
   --bg:          #0a0a0a;
   --bg-2:        #111111;
@@ -18,8 +13,8 @@
   --text-muted:  #7a7570;
   --text-dim:    #3d3a36;
 
-  --accent:      #e8c97d;          /* warm gold */
-  --accent-2:    #c0392b;          /* blood red */
+  --accent:      #e8c97d;         
+  --accent-2:    #c0392b;         
   --accent-glow: rgba(232,201,125,0.12);
 
   --font-display: 'Bebas Neue', sans-serif;
@@ -33,7 +28,6 @@
   --nav-h:        72px;
 }
 
-/* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
@@ -60,7 +54,6 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 a   { color: inherit; text-decoration: none; }
 ul  { list-style: none; }
 
-/* ── Custom Cursor ── */
 #cursor {
   position: fixed;
   top: 0; left: 0;
@@ -87,7 +80,6 @@ ul  { list-style: none; }
 }
 body:hover #cursor-ring { opacity: 1; }
 
-/* ── Noise Texture Overlay ── */
 body::before {
   content: '';
   position: fixed;
@@ -98,7 +90,6 @@ body::before {
   z-index: 9000;
 }
 
-/* ── Navigation ── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -175,7 +166,6 @@ nav.scrolled {
   transition: transform 0.3s, opacity 0.3s;
 }
 
-/* ── Hero Section ── */
 #hero {
   min-height: 100vh;
   display: grid;
@@ -370,7 +360,6 @@ nav.scrolled {
 }
 .hero-scroll-hint svg { opacity: 0.4; }
 
-/* ── Section Shared ── */
 section { padding: clamp(80px, 10vw, 140px) clamp(24px, 4vw, 64px); }
 
 .section-label {
@@ -400,7 +389,6 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 4vw, 64px); }
   margin-bottom: 24px;
 }
 
-/* ── About Section ── */
 #about {
   display: block;
   background: var(--bg);
@@ -448,7 +436,6 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 4vw, 64px); }
 }
 .skill-tag:hover { border-color: var(--accent); color: var(--text); }
 
-/* ── Projects Section ── */
 #projects { background: var(--bg-2); }
 
 .projects-grid {
@@ -554,7 +541,6 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 4vw, 64px); }
 }
 .project-card:hover .project-arrow { transform: translateX(0); opacity: 1; }
 
-/* ── Contact Section ── */
 #contact {
   background: var(--bg);
   display: grid;
@@ -638,7 +624,6 @@ section { padding: clamp(80px, 10vw, 140px) clamp(24px, 4vw, 64px); }
 .form-input::placeholder, .form-textarea::placeholder { color: var(--text-dim); }
 .form-textarea { min-height: 140px; }
 
-/* ── Footer ── */
 footer {
   background: var(--bg-2);
   border-top: 1px solid var(--border-soft);
@@ -675,7 +660,6 @@ footer {
 }
 .footer-links a:hover { color: var(--accent); }
 
-/* ── Animations ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -689,7 +673,6 @@ footer {
   50%       { transform: translateX(-50%) translateY(8px); }
 }
 
-/* Scroll reveal */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -704,7 +687,6 @@ footer {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.45s; }
 
-/* ── Responsive ── */
 @media (max-width: 1024px) {
   #hero { grid-template-columns: 1fr; padding-top: calc(var(--nav-h) + 40px); }
   .hero-visual { height: 50vh; max-height: 500px; }
@@ -723,7 +705,6 @@ footer {
   .footer-links { flex-wrap: wrap; justify-content: center; }
 }
 
-/* Mobile menu */
 .mobile-menu {
   position: fixed;
   inset: 0;
@@ -747,7 +728,6 @@ footer {
 }
 .mobile-menu a:hover { color: var(--accent); }
 
-/* ── Hide custom cursor on touch devices ── */
 @media (hover: none) and (pointer: coarse) {
   #cursor, #cursor-ring { display: none; }
   body { cursor: auto; }

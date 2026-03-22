@@ -1,8 +1,4 @@
-/* ============================================================
-   PROJECT PAGE STYLES
-   ============================================================ */
 
-/* ── Project Hero ── */
 .project-hero {
   min-height: 90vh;
   display: flex;
@@ -101,7 +97,6 @@
   color: var(--text);
 }
 
-/* ── Project Body ── */
 .project-body {
   max-width: 1200px;
   margin: 0 auto;
@@ -145,7 +140,6 @@
 }
 .detail-block dd { font-size: 0.88rem; color: var(--text); }
 
-/* ── Project Images ── */
 .project-images { display: flex; flex-direction: column; gap: 4px; margin-bottom: 100px; }
 
 .project-img-row { display: grid; gap: 4px; }
@@ -202,7 +196,6 @@
 }
 .project-img-cell:hover .img-caption { opacity: 1; }
 
-/* ── Features ── */
 .project-features { margin-bottom: 100px; }
 .features-heading {
   font-family: var(--font-display);
@@ -240,7 +233,6 @@
 }
 .feature-text { font-size: 0.82rem; line-height: 1.8; color: var(--text-muted); }
 
-/* ── Stack badges ── */
 .project-stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 48px; }
 .stack-badge {
   background: var(--bg-3);
@@ -254,7 +246,6 @@
 }
 .stack-badge:hover { border-color: var(--accent); color: var(--accent); }
 
-/* ── Project Nav ── */
 .project-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -1,15 +1,10 @@
-/* ============================================================
-   PORTFOLIO — MAIN JAVASCRIPT
-   ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Custom Cursor
   const cursor     = document.getElementById('cursor');
   const cursorRing = document.getElementById('cursor-ring');
 
   if (cursor && cursorRing) {
-    // Hide the native pointer and text cursors globally
     const hideStyle = document.createElement('style');
     hideStyle.textContent = '*, *::before, *::after { cursor: none !important; }';
     document.head.appendChild(hideStyle);
@@ -42,13 +37,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Navbar scroll
   const nav = document.querySelector('nav');
   if (nav) {
     window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40), { passive: true });
   }
 
-  // Mobile menu
   const menuBtn    = document.querySelector('.nav-menu-btn');
   const mobileMenu = document.querySelector('.mobile-menu');
   if (menuBtn && mobileMenu) {
@@ -70,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', toggle));
   }
 
-  // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
     const observer = new IntersectionObserver(entries => {
@@ -81,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => observer.observe(el));
   }
 
-  // Contact form
   const form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', async e => {
@@ -118,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Smooth anchor links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const target = document.querySelector(a.getAttribute('href'));
