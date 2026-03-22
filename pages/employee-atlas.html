@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Atlas — Haris Sejmenović</title>
+  <meta name="description" content="[Brief description of Employee Atlas for SEO]" />
+  <link rel="stylesheet" href="../styles/project.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="nav-logo"><span>Haris Sejmenović</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Work</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+    <button class="nav-menu-btn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#projects">Work</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+
+  <!-- PROJECT HERO -->
+  <div class="project-hero">
+    <div class="project-hero-bg">
+        <img src="../assets/AtlasCover.png" alt="Employee Atlas" />
+    </div>
+
+    <div class="project-hero-content">
+      <a href="../index.html#projects" class="project-back">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M12 7H2M6 3L2 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        All Projects
+      </a>
+
+      <p class="project-category">Web Application</p>
+      <h1>Employee Atlas</h1>
+
+      <div class="project-hero-meta">
+        <div class="meta-item">
+          <p class="meta-label">Year</p>
+          <p class="meta-value">2024</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Role</p>
+          <p class="meta-value">Developer</p>
+        </div>
+        <div class="meta-item">
+          <p class="meta-label">Status</p>
+          <p class="meta-value">Completed</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT BODY -->
+  <div class="project-body">
+
+    <!-- Overview + Details -->
+    <div class="project-intro reveal">
+      <div>
+        <h2 class="project-overview-heading">Overview</h2>
+        <div class="project-overview-text">
+          <p>
+            Employee Atlas is a full-stack web application for managing everything that happens inside an organisation from hiring and promotions to leave requests and resignations. It gives both employees and managers a single platform to handle the workflows that usually get lost in emails and spreadsheets.
+          </p>
+          <p>
+            The core idea was to replace informal, scattered HR processes with a structured system that actually tracks things end to end. Every request whether it's a leave, an elevation, or a resignation goes through a proper approval flow, with live notifications keeping both sides informed at every step.
+          </p>
+          <p>
+            Built with ASP.NET Core and Angular, the project covers real-time features via SignalR, role-based access for employees and admins, and an internal job board where open positions can be listed and applied to directly through the platform.
+          </p>
+        </div>
+
+        <div class="project-stack">
+          <span class="stack-badge">ASP.NET Core</span>
+          <span class="stack-badge">SQL Server</span>
+          <span class="stack-badge">Angular</span>
+          <span class="stack-badge">TypeScript</span>
+          <span class="stack-badge">SignalR</span>
+        </div>
+      </div>
+
+      <!-- Project Details sidebar -->
+      <dl>
+        <div class="detail-block">
+          <dt>Client / Context</dt>
+          <dd>Personal project</dd>
+        </div>
+        <div class="detail-block">
+          <dt>Duration</dt>
+          <dd>6 months</dd>
+        </div>
+        <div class="detail-block">
+          <dt>Team</dt>
+          <dd>Solo</dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- Project Screenshots / Gallery -->
+    <div class="project-images reveal">
+
+      <!-- Row 1: Full-width screenshot -->
+      <div class="project-img-row cols-1">
+        <div class="project-img-cell short">
+          <img src="../assets/employeeatlas/AtlasHome.png" alt="Dashboard view" />
+        </div>
+      </div>
+
+      <!-- Row 2: Two side-by-side -->
+      <div class="project-img-row cols-3">
+        <div class="project-img-cell tall">
+          <img src="../assets/employeeatlas/AtlasMainMobile.png" alt="Feature view" />
+        </div>
+        <div class="project-img-cell tall">
+          <img src="../assets/employeeatlas/AtlasSearchMobile.png" alt="Feature view" />
+        </div>
+        <div class="project-img-cell tall">
+          <img src="../assets/employeeatlas/AtlasCompanyMobile.png" alt="Feature view" />
+        </div>
+      </div>
+
+      <!-- Row 3: Asymmetric 2/3 + 1/3 -->
+      <div class="project-img-row cols-1">
+        <div class="project-img-cell short">
+          <img src="../assets/employeeatlas/AtlasBingo.png" alt="Wide view" />
+        </div>
+        <div class="project-img-cell short">
+          <img src="../assets/employeeatlas/AtlasProfile.png" alt="Detail view" />
+        </div>
+      </div>
+
+      <!--
+        ADD MORE ROWS: Available column layouts:
+        cols-1     = full width
+        cols-2     = 50/50
+        cols-3     = equal thirds
+        cols-2-1   = 66/33
+        cols-1-2   = 33/66
+
+        Available aspect ratios for cells:
+        short    = 16/9
+        tall     = 4/3
+        square   = 1/1
+        portrait = 3/4
+      -->
+
+    </div>
+
+    <!-- Key Features / Highlights -->
+    <div class="project-features reveal">
+      <h2 class="features-heading">Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-number">01</div>
+          <h3 class="feature-title">Employee Management</h3>
+          <p class="feature-text">Admins can hire, fire, and promote employees directly through the platform. Role and department changes are reflected immediately across the system.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">02</div>
+          <h3 class="feature-title">Work Hour Tracking</h3>
+          <p class="feature-text">Employees log their daily working hours through the app. Managers get a clear overview of team attendance and time spent without chasing spreadsheets.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">03</div>
+          <h3 class="feature-title">Live Notifications</h3>
+          <p class="feature-text">Real-time notifications keep employees and managers in sync. Request approvals, status updates, and announcements are pushed instantly without a page refresh.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">04</div>
+          <h3 class="feature-title">Job Board & Applications</h3>
+          <p class="feature-text">Open positions are listed on an internal job board. Employees and external candidates can browse and apply directly through the platform.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">05</div>
+          <h3 class="feature-title">Leave Requests</h3>
+          <p class="feature-text">Employees submit leave requests through a structured flow. Managers review and approve or reject them, with the outcome notified in real time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-number">06</div>
+          <h3 class="feature-title">Resignation & Elevation</h3>
+          <p class="feature-text">Employees can formally submit resignation or elevation requests through the app. Each request enters an approval workflow tracked end to end.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next / Prev Project Navigation -->
+    <div class="project-nav reveal">
+      <a href="deadshot.html" class="project-nav-item">
+        <span class="project-nav-dir">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M12 7H2M6 3L2 7l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Previous
+        </span>
+        <span class="project-nav-name">Deadshot</span>
+      </a>
+      <a href="flair.html" class="project-nav-item" style="text-align:right">
+        <span class="project-nav-dir" style="justify-content:flex-end">
+          Next
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </span>
+        <span class="project-nav-name">Flair</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="../main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
